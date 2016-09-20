@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  author: Samuel Loh Yin Kang
+  description: Jetbrains Products
+  license: license (MIT)
+  min_ansible_version: 2.0
+  platforms:
+  - name: Centos
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  galaxy_tags:
+    - jetbrains
+    - intellij
+    - idea
+    - pycharm
+    - phpstorm
+    - webstorm
+    - clion
+    - datagrid
+    - rubymine
+
+dependencies: []

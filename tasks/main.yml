@@ -1,0 +1,43 @@
+- set_fact:
+    temp_dir: "/tmp/jetbrains/{{ product }}/{{ product }}-{{ product_version }}"
+    product_name: "{{ urls[product][product_version].tarball.name }}"
+    product_start: "{{ urls[product][product_version].tarball.start }}"
+    product_image: "{{ urls[product][product_version].tarball.image }}"
+    product_home: "{{ prefix }}/{{ product }}/{{ urls[product][product_version].tarball.dir }}"
+    product_url: "{{ urls[product][product_version].tarball.url }}"
+    product_hash: "{{ urls[product][product_version].tarball.hash }}"
+- set_fact:
+    product_file: "{{ temp_dir }}/{{ urls[product][product_version].tarball.file }}"
+
+- file:
+    path: "{{ temp_dir }}"
+    state: directory
+
+- file:
+    path: "{{ product_home }}"
+    state: directory
+
+- name: "Download {{ product }}"
+  get_url:
+    url: "{{ product_url }}"
+    dest: "{{ product_file }}"
+    checksum: "sha256:{{ product_hash }}"
+
+
+- name: Extract product
+  unarchive:
+    src: "{{ product_file }}"
+    dest: "{{ prefix }}/{{ product }}"
+    remote_src: yes
+
+- template: 
+    src: "templates/product.sh.j2"
+    dest: "/etc/profile.d/{{ product }}.sh"
+- template:
+    src: "templates/product.desktop.j2"
+    dest: "/usr/local/share/applications/{{ product }}.desktop"
+
+- name: Clean Temporary files
+  file: 
+    path: "{{ temp_dir }}"
+    state: absent

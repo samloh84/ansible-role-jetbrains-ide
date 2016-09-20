@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export {{ product|upper }}_HOME={{ product_home }}
+export PATH=${PATH}:${{ product|upper }}_HOME}/bin
+
