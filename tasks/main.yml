@@ -1,5 +1,5 @@
 - set_fact:
-    temp_dir: "/tmp/jetbrains/{{ product }}/{{ product }}-{{ product_version }}"
+    tmp_dir: "{{ tmp_prefix }}/{{ product }}/{{ product }}-{{ product_version }}"
     product_name: "{{ urls[product][product_version].tarball.name }}"
     product_start: "{{ urls[product][product_version].tarball.start }}"
     product_image: "{{ urls[product][product_version].tarball.image }}"
@@ -7,15 +7,16 @@
     product_url: "{{ urls[product][product_version].tarball.url }}"
     product_hash: "{{ urls[product][product_version].tarball.hash }}"
 - set_fact:
-    product_file: "{{ temp_dir }}/{{ urls[product][product_version].tarball.file }}"
+    product_file: "{{ tmp_dir }}/{{ urls[product][product_version].tarball.file }}"
 
-- file:
-    path: "{{ temp_dir }}"
+- name: "Create Directories"
+  file:
+    path: "{{ item }}"
     state: directory
-
-- file:
-    path: "{{ product_home }}"
-    state: directory
+    mode: 0755
+  with_items:
+    - "{{ tmp_dir }}"
+    - "{{ product_home }}"
 
 - name: "Download {{ product }}"
   get_url:
@@ -42,5 +43,16 @@
 
 - name: Clean Temporary files
   file: 
-    path: "{{ temp_dir }}"
+    path: "{{ tmp_dir }}"
     state: absent
+
+- name: "Fix Permissions"
+  shell: "{{ item }}"
+  args:
+    chdir: "{{ prefix }}"
+  with_items:
+    - "chown -R root:root ."
+    - "find . -perm -u+r -exec chmod a+r {} \\;"
+    - "find . -perm -u+w -exec chmod a+w {} \\;"
+    - "find . -perm -u+x -exec chmod a+x {} \\;"
+

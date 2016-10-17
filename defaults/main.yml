@@ -1,3 +1,4 @@
+tmp_prefix: "/tmp/jetbrains"
 prefix: "/opt/jetbrains"
 product: "idea"
 product_version: "2016.2.4"
