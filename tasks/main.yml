@@ -33,9 +33,12 @@
 - template: 
     src: "product.sh.j2"
     dest: "/etc/profile.d/{{ product }}.sh"
+    mode: 0644
+
 - template:
     src: "product.desktop.j2"
     dest: "/usr/local/share/applications/{{ product }}.desktop"
+    mode: 0644
 
 - name: Clean Temporary files
   file: 
