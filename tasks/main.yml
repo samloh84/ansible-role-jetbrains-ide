@@ -31,10 +31,10 @@
     remote_src: yes
 
 - template: 
-    src: "templates/product.sh.j2"
+    src: "product.sh.j2"
     dest: "/etc/profile.d/{{ product }}.sh"
 - template:
-    src: "templates/product.desktop.j2"
+    src: "product.desktop.j2"
     dest: "/usr/local/share/applications/{{ product }}.desktop"
 
 - name: Clean Temporary files
