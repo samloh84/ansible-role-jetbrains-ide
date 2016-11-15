@@ -2,6 +2,9 @@ urls:
     webstorm:
         '2016.3':
             binaries:
+                name: WebStorm
+                image: webstorm.png
+                start: webstorm.sh
                 file: WebStorm-2016.3.tar.gz
                 dir: WebStorm-163.7743.25/
                 url: 'https://download.jetbrains.com/webstorm/WebStorm-2016.3.tar.gz'
@@ -10,6 +13,9 @@ urls:
     phpstorm:
         2016.2.2:
             binaries:
+                name: PhpStorm
+                image: webide.png
+                start: phpstorm.sh
                 file: PhpStorm-2016.2.2.tar.gz
                 dir: PhpStorm-162.2380.11/
                 url: 'https://download.jetbrains.com/webide/PhpStorm-2016.2.2.tar.gz'
@@ -18,6 +24,9 @@ urls:
     datagrip:
         2016.2.6:
             binaries:
+                name: DataGrip
+                image: product.png
+                start: datagrip.sh
                 file: datagrip-2016.2.6.tar.gz
                 dir: DataGrip-2016.2.6/
                 url: 'https://download.jetbrains.com/datagrip/datagrip-2016.2.6.tar.gz'
@@ -26,6 +35,9 @@ urls:
     idea:
         2016.2.5:
             binaries:
+                name: IntelliJ IDEA
+                image: idea.png
+                start: idea.sh
                 file: ideaIU-2016.2.5.tar.gz
                 dir: idea-IU-162.2228.15/
                 url: 'https://download.jetbrains.com/idea/ideaIU-2016.2.5.tar.gz'
@@ -34,6 +46,9 @@ urls:
     rubymine:
         2016.2.5:
             binaries:
+                name: RubyMine
+                image: RMlogo.svg
+                start: rubymine.sh
                 file: RubyMine-2016.2.5.tar.gz
                 dir: RubyMine-2016.2.5/
                 url: 'https://download.jetbrains.com/ruby/RubyMine-2016.2.5.tar.gz'
@@ -42,6 +57,9 @@ urls:
     pycharm:
         2016.2.3:
             binaries:
+                name: PyCharm
+                image: pycharm.png
+                start: pycharm.sh
                 file: pycharm-professional-2016.2.3.tar.gz
                 dir: pycharm-2016.2.3/
                 url: 'https://download.jetbrains.com/python/pycharm-professional-2016.2.3.tar.gz'
@@ -50,6 +68,9 @@ urls:
     clion:
         2016.2.3:
             binaries:
+                name: CLion
+                image: clion.svg
+                start: clion.sh
                 file: CLion-2016.2.3.tar.gz
                 dir: clion-2016.2.3/
                 url: 'https://download.jetbrains.com/cpp/CLion-2016.2.3.tar.gz'
