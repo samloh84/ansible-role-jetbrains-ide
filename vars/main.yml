@@ -1,150 +1,57 @@
 urls:
-  clion:
-    2016.2.2:
-      dmg:
-        file: CLion-2016.2.2.dmg
-        dir: clion-2016.2.2
-        url: https://download.jetbrains.com/cpp/CLion-2016.2.2.dmg
-        hash: 9c7667bf180352e2af9ceb521f3fcd260c30bb99cd7d7d7b90b058997dd6f8dc
-      exe:
-        file: CLion-2016.2.2.dmg
-        dir: clion-2016.2.2
-        url: https://download.jetbrains.com/cpp/CLion-2016.2.2.exe
-        hash: 168e6b8828050fecbcc31bcd77335c32b0c91d38b60904948e734acaf9c51305
-      tarball:
-        name: CLion
-        image: clion.svg
-        start: clion.sh
-        file: CLion-2016.2.2.tar.gz
-        dir: clion-2016.2.2
-        url: https://download.jetbrains.com/cpp/CLion-2016.2.2.tar.gz
-        hash: b1595466ff890067dda8e0176dd815a825fb86fc2b6ef90610294ec61c1d5819
-  datagrip:
-    2016.2.3:
-      dmg:
-        file: datagrip-2016.2.3.dmg
-        dir: DataGrip-2016.2.3
-        url: https://download.jetbrains.com/datagrip/datagrip-2016.2.3.dmg
-        hash: 0cee084a8080267b9d404c39955cad50a424042e87a8d78210a6d751a52fac92
-      exe:
-        file: datagrip-2016.2.3.exe
-        dir: DataGrip-2016.2.3
-        url: https://download.jetbrains.com/datagrip/datagrip-2016.2.3.exe
-        hash: d123e545a1bb0375ae150492989395e8e4f2a95cac12405bba2efbc1a81aaff8
-      tarball:
-        name: DataGrip
-        image: product.png
-        start: datagrip.sh
-        file: datagrip-2016.2.3.tar.gz
-        dir: DataGrip-2016.2.3
-        url: https://download.jetbrains.com/datagrip/datagrip-2016.2.3.tar.gz
-        hash: 2019d53e048c8868d4d372347cf0c69601b483b52671f7ff4dce1544961d2708
-
-  idea:
-    2016.2.4:
-      dmg:
-        file: ideaIU-2016.2.4.dmg
-        dir: idea-IU-162.2032.8
-        url: https://download.jetbrains.com/idea/ideaIU-2016.2.4.dmg
-        hash: 952e72b054a0972b83662c318d7c04a2226790f3c0afffb5bf578a7a133f379b
-      exe:
-        file: ideaIU-2016.2.4.exe
-        dir: idea-IU-162.2032.8
-        url: https://download.jetbrains.com/idea/ideaIU-2016.2.4.exe
-        hash: 74006ec851934c8c1a4be27656762c6ff38cb847288ce800a2f6ffe1691b72a9
-      tarball:
-        name: IntelliJ IDEA
-        image: idea.png
-        start: idea.sh
-        file: ideaIU-2016.2.4.tar.gz
-        dir: idea-IU-162.2032.8
-        url: https://download.jetbrains.com/idea/ideaIU-2016.2.4.tar.gz
-        hash: f940fb9fa356e28351dd99cf2612c967d173e4413b66c0452ee8fa651b64b698
-
-
-  pycharm:
-    2016.2.3:
-      dmg:
-        file: pycharm-professional-2016.2.3.dmg
-        dir: pycharm-2016.2.3
-        url: https://download.jetbrains.com/python/pycharm-professional-2016.2.3.dmg
-        hash: 0e254d18cdf2dfc380110e9d05e8c3a16ec65fbf5c66316a351603e0a6d39ce8
-      exe:
-        file: pycharm-professional-2016.2.3.exe
-        dir: pycharm-2016.2.3
-        url: https://download.jetbrains.com/python/pycharm-professional-2016.2.3.exe
-        hash: 1e7bc004229b21d04a9147a4032560f44622af46f83f4fcd1dc91e58d242a150
-      tarball:
-        name: PyCharm
-        image: pycharm.png
-        start: pycharm.sh
-        file: pycharm-professional-2016.2.3.tar.gz
-        dir: pycharm-2016.2.3
-        url: https://download.jetbrains.com/python/pycharm-professional-2016.2.3.tar.gz
-        hash: a1eef156cc56eb3a36b437684b68b2e16f2575b5f1245a617eceb8352f6f4f5e
-
-  rubymine:
-    2016.2.3:
-      dmg:
-        file: RubyMine-2016.2.3.dmg
-        dir: RubyMine-2016.2.3
-        url: https://download.jetbrains.com/ruby/RubyMine-2016.2.3.dmg
-        hash: 0e8c7c620bbd368fa06e06727d4cb779b14e82a9ad5f2ba285b579412b669857
-      exe:
-        file: RubyMine-2016.2.3.exe
-        dir: RubyMine-2016.2.3
-        url: https://download.jetbrains.com/ruby/RubyMine-2016.2.3.exe
-        hash: 3535c8a1ea12d206b7e1e8228b38efbc60f7f638098907d80d3e43f18980eb91
-      tarball:
-        name: RubyMine
-        image: RMlogo.svg
-        start: rubymine.sh
-        file: RubyMine-2016.2.3.tar.gz
-        dir: RubyMine-2016.2.3
-        url: https://download.jetbrains.com/ruby/RubyMine-2016.2.3.tar.gz
-        hash: 260bc73378d00f44ea7368e7893f0b633e08d8da1690e2a073d788ea0a278135
-
-
-
-
-  phpstorm:
-    2016.2.1:
-      dmg:
-        file: PhpStorm-2016.2.1.dmg
-        dir: PhpStorm-162.1889.1
-        url: https://download.jetbrains.com/webide/PhpStorm-2016.2.1.dmg
-        hash: 8ca63d50da56d1ab2663406922e10c88bb46c3c2569b2ff434aa8a72014237e5
-      exe:
-        file: PhpStorm-2016.2.1.exe
-        dir: PhpStorm-162.1889.1
-        url: https://download.jetbrains.com/webide/PhpStorm-2016.2.1.exe
-        hash: 139a03c488e1f133fa54b3efe0608bac848213bae12b852b8054bc9763e80615
-      tarball:
-        name: PhpStorm
-        image: webide.png
-        start: phpstorm.sh
-        file: PhpStorm-2016.2.1.tar.gz
-        dir: PhpStorm-162.1889.1
-        url: https://download.jetbrains.com/webide/PhpStorm-2016.2.1.tar.gz
-        hash: 77d559b46d2a47422e8323d47e8d05bdac5fe21dd996b205c7c8836f7403f96d
-
-  webstorm:
-    2016.2.1:
-      dmg:
-        file: WebStorm-2016.2.3.dmg
-        dir: WebStorm-162.1812.21
-        url: https://download.jetbrains.com/webstorm/WebStorm-2016.2.3.dmg
-        hash: 010130726d68538cadd7090312603ecbb3183c9e57172c1465179685f5eccc18
-      exe:
-        file: WebStorm-2016.2.3.exe
-        dir: WebStorm-162.1812.21
-        url: https://download.jetbrains.com/webstorm/WebStorm-2016.2.3.exe
-        hash: 439d7580e7e4e5452d92a153063ad7ea4fcca3536f7e6314d7339de861eae402
-      tarball:
-        name: WebStorm
-        image: webstorm.png
-        start: webstorm.sh
-        file: WebStorm-2016.2.3.tar.gz
-        dir: WebStorm-162.1812.21
-        url: https://download.jetbrains.com/webstorm/WebStorm-2016.2.3.tar.gz
-        hash: edf2cede3e82c38322b62d7896f9f36db626357ab316fc69fa5a3b5bc8ad2011
+    webstorm:
+        '2016.3':
+            binaries:
+                file: WebStorm-2016.3.tar.gz
+                dir: WebStorm-163.7743.25/
+                url: 'https://download.jetbrains.com/webstorm/WebStorm-2016.3.tar.gz'
+                hash: 858F7882EBDCBAB1CB4F4745D35D0805E9786EE8828A9557DE97019C4F475B8A
+        latestVersion: '2016.3'
+    phpstorm:
+        2016.2.2:
+            binaries:
+                file: PhpStorm-2016.2.2.tar.gz
+                dir: PhpStorm-162.2380.11/
+                url: 'https://download.jetbrains.com/webide/PhpStorm-2016.2.2.tar.gz'
+                hash: DF2F5CD4C94A3AA5403A3CECC6249827CFD6138FFD720CF04FBD07F5F0F5E05A
+        latestVersion: 2016.2.2
+    datagrip:
+        2016.2.6:
+            binaries:
+                file: datagrip-2016.2.6.tar.gz
+                dir: DataGrip-2016.2.6/
+                url: 'https://download.jetbrains.com/datagrip/datagrip-2016.2.6.tar.gz'
+                hash: C65EF81E7C178D6E0F6FC4C7D55687A474E7C4BD0E2A94BD3DE541EE66DAFF4A
+        latestVersion: 2016.2.6
+    idea:
+        2016.2.5:
+            binaries:
+                file: ideaIU-2016.2.5.tar.gz
+                dir: idea-IU-162.2228.15/
+                url: 'https://download.jetbrains.com/idea/ideaIU-2016.2.5.tar.gz'
+                hash: 30A4DDF82B8393FC22803C9335D6CB00087116DD09915E44F40F0433B81B1B3D
+        latestVersion: 2016.2.5
+    rubymine:
+        2016.2.5:
+            binaries:
+                file: RubyMine-2016.2.5.tar.gz
+                dir: RubyMine-2016.2.5/
+                url: 'https://download.jetbrains.com/ruby/RubyMine-2016.2.5.tar.gz'
+                hash: F7DCF7F8AE6716471BDDE9EF4C58B0E87EEC8986608A5BE859EEC2DD4AB5CCE6
+        latestVersion: 2016.2.5
+    pycharm:
+        2016.2.3:
+            binaries:
+                file: pycharm-professional-2016.2.3.tar.gz
+                dir: pycharm-2016.2.3/
+                url: 'https://download.jetbrains.com/python/pycharm-professional-2016.2.3.tar.gz'
+                hash: A1EEF156CC56EB3A36B437684B68B2E16F2575B5F1245A617ECEB8352F6F4F5E
+        latestVersion: 2016.2.3
+    clion:
+        2016.2.3:
+            binaries:
+                file: CLion-2016.2.3.tar.gz
+                dir: clion-2016.2.3/
+                url: 'https://download.jetbrains.com/cpp/CLion-2016.2.3.tar.gz'
+                hash: 0D2FC6ECEC4DFAB15BA98021ED3D3E866C2D43E7C27B7E522E0161E76AA78FBD
+        latestVersion: 2016.2.3

@@ -1,13 +1,13 @@
 - set_fact:
     tmp_dir: "{{ tmp_prefix }}/{{ product }}/{{ product }}-{{ product_version }}"
-    product_name: "{{ urls[product][product_version].tarball.name }}"
-    product_start: "{{ urls[product][product_version].tarball.start }}"
-    product_image: "{{ urls[product][product_version].tarball.image }}"
-    product_home: "{{ prefix }}/{{ product }}/{{ urls[product][product_version].tarball.dir }}"
-    product_url: "{{ urls[product][product_version].tarball.url }}"
-    product_hash: "{{ urls[product][product_version].tarball.hash }}"
+    product_name: "{{ urls[product][product_version].binaries.name }}"
+    product_start: "{{ urls[product][product_version].binaries.start }}"
+    product_image: "{{ urls[product][product_version].binaries.image }}"
+    product_home: "{{ prefix }}/{{ product }}/{{ urls[product][product_version].binaries.dir }}"
+    product_url: "{{ urls[product][product_version].binaries.url }}"
+    product_hash: "{{ urls[product][product_version].binaries.hash }}"
 - set_fact:
-    product_file: "{{ tmp_dir }}/{{ urls[product][product_version].tarball.file }}"
+    product_file: "{{ tmp_dir }}/{{ urls[product][product_version].binaries.file }}"
 
 - name: "Create Directories"
   file:
